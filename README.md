@@ -8,3 +8,5 @@ PHP-SDK for [PostNord webservices](http://www.postdanmark.dk/da/Logistik/netbuti
     $client = new PostNord_Client($request);
 
     $result = $client->findNearestByZipCode(7100);
+
+Check out the full API for [Pick location](http://logistics.postennorden.com/wsp/rest-services/api-doc/PublicApiDoc-publicapi.html) and for [Track'n'Trace](http://logistics.postennorden.com/wsp/rest-services/ntt-service-rest/api/shipment/menu.html)

@@ -1,0 +1,25 @@
+{
+  "name": "postnord-sdk",
+    "type": "library",
+    "description": "PHP-SDK to communicate with Post Nord",
+    "homepage": "http://github.com/lsolesen/postnord-sdk",
+    "authors": [
+        {
+            "name": "Lars Olesen",
+            "email": "lars@intraface.dk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PostNord\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "PostNord\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=5.2.2"
+    }
+}

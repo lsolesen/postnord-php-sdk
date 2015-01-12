@@ -14,6 +14,7 @@
  */
 
 namespace PostNord\Client;
+use PostNord\Exception\PostNord_Exception;
 
 /**
  * PostNord: client.
@@ -104,6 +105,11 @@ class PostNord_Client
     public function findNearestByZipCode($zip_code)
     {
         $result = $this->request->call('GET', '', $zip_code);
+        if (!empty($result->info['http_code']) && $result->info['http_code'] != 200) {
+            throw new PostNord_Exception(
+                'Error with http_code: ' . $result->info['http_code']
+            );
+        }
         return $result->getBody()->servicePointInformationResponse->servicePoints;
     }
 }

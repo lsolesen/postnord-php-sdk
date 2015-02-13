@@ -1,4 +1,4 @@
-PostNord [![Build Status](https://travis-ci.org/lsolesen/postnord-sdk.svg?branch=master)](https://travis-ci.org/lsolesen/postnord-sdk)
+PostNord [![Build Status](https://travis-ci.org/lsolesen/postnord-sdk.svg?branch=master)](https://travis-ci.org/lsolesen/postnord-sdk) [![Coverage Status](https://coveralls.io/repos/lsolesen/postnord-sdk/badge.svg)](https://coveralls.io/r/lsolesen/postnord-sdk)
 ==
 
 PHP-SDK for [PostNord webservices](http://www.postdanmark.dk/da/Logistik/netbutikker/login/Sider/webservices.aspx). You need an [API-key](http://www.postdanmark.dk/da/Logistik/netbutikker/login/Sider/Opret.aspx) to use the service.

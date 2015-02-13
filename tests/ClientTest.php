@@ -9,8 +9,6 @@ use PostNord\Client\PostNord_Request;
  * Class ClientTest
  *
  * @package PostNord
- *
- * @covers PostNord_Request, PostNord_Client
  */
 class ClientTest extends \PHPUnit_Framework_TestCase
 {

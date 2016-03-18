@@ -59,7 +59,7 @@ class PostNord_Request
             "/Logistics/ServicePointService_1.0/findNearestByAddress.json?" .
             "consumerId=" . $this->apiKey .
             "&countryCode=" . $this->countryCode .
-            "&postalCode=" . $postcode . 
+            "&postalCode=" . $postcode .
             '&numberOfServicePoints='.$this->numberOfServicePoints;
 
         $curl = curl_init();

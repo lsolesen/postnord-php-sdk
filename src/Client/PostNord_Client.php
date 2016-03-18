@@ -14,6 +14,7 @@
  */
 
 namespace PostNord\Client;
+
 use PostNord\Exception\PostNord_Exception;
 
 /**

@@ -15,3 +15,7 @@ $result = $client->findNearestByZipCode(7100);
 ```
 
 Check out the full API for [servicepoints](http://logistics.postennorden.com/wsp/docs/servicepoints/index.html), [Track'n'Trace](http://logistics.postennorden.com/wsp/rest-services/ntt-service-rest/api/shipment/menu.html) and [Transit time](http://logistics.postennorden.com/wsp/rest-services/notis-rest/api/transitTimeInfo/menu.html).
+
+## Alternative
+
+[Parcelshop's PHP implementation for parcelshops](https://github.com/Parcelshop/postdanmark-parcelshop)

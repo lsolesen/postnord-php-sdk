@@ -2,8 +2,8 @@
 
 namespace PostNord\Tests;
 
-use PostNord\Client\PostNord_Client;
-use PostNord\Client\PostNord_Request;
+use PostNord\Client\Client as PostNord_Client;
+use PostNord\Client\Request as PostNord_Request;
 
 /**
  * Class ClientTest
@@ -17,20 +17,20 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     protected $contactId;
     protected $organizationId;
 
-    function getClient($key)
+    public function getClient($key)
     {
         $request = new PostNord_Request($key);
         return new PostNord_Client($request);
     }
 
-    function testConstructor()
+    public function testConstructor()
     {
         $invalid_api_key = 'invalid';
         $client = $this->getClient($invalid_api_key);
         $this->assertTrue(is_object($client));
     }
 
-    function testFindNearest()
+    public function testFindNearest()
     {
         $client = $this->getClient($this->api_key);
         $result = $client->findNearestByZipCode(7100);

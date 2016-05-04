@@ -1,12 +1,17 @@
-PostNord [![Build Status](https://travis-ci.org/lsolesen/postnord-sdk.svg?branch=master)](https://travis-ci.org/lsolesen/postnord-sdk) [![Coverage Status](https://coveralls.io/repos/lsolesen/postnord-sdk/badge.svg)](https://coveralls.io/r/lsolesen/postnord-sdk)
+PostNord [![Build Status](https://travis-ci.org/lsolesen/postnord-php-sdk.svg?branch=master)](https://travis-ci.org/lsolesen/postnord-php-sdk) [![Coverage Status](https://coveralls.io/repos/lsolesen/postnord-php-sdk/badge.svg)](https://coveralls.io/r/lsolesen/postnord-php-sdk)
 ==
 
-PHP-SDK for [PostNord webservices](http://www.postdanmark.dk/da/Logistik/netbutikker/login/Sider/webservices.aspx). You need an [API-key](http://www.postdanmark.dk/da/Logistik/netbutikker/login/Sider/Opret.aspx) to use the service.
+PHP-SDK for [PostNord webservices](http://www.postdanmark.dk/da/erhverv/faa-raadgivning/e-handel/webservices/Sider/webservices.aspx). You need an [API-key](http://www.postdanmark.dk/da/erhverv/faa-raadgivning/e-handel/webservices/login/Sider/api-og-widgets.aspx) to use the service.
 
-    <?php
-    $request = new PostNord_Request($apiKey);
-    $client = new PostNord_Client($request);
+```php5
+<?php
+use PostNord\Client\Request;
+use PostNord\Client\Client;
 
-    $result = $client->findNearestByZipCode(7100);
+$request = new Request($apiKey);
+$client = new Client($request);
 
-Check out the full API for [Pick location](http://logistics.postennorden.com/wsp/rest-services/api-doc/PublicApiDoc-publicapi.html) and for [Track'n'Trace](http://logistics.postennorden.com/wsp/rest-services/ntt-service-rest/api/shipment/menu.html)
+$result = $client->findNearestByZipCode(7100);
+```
+
+Check out the full API for [servicepoints](http://logistics.postennorden.com/wsp/docs/servicepoints/index.html), [Track'n'Trace](http://logistics.postennorden.com/wsp/rest-services/ntt-service-rest/api/shipment/menu.html) and [Transit time](http://logistics.postennorden.com/wsp/rest-services/notis-rest/api/transitTimeInfo/menu.html).

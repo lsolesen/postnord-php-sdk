@@ -8,14 +8,13 @@
  * @package   PostNord
  * @author    Lars Olesen <lars@intraface.dk>
  * @copyright 2014 Lars Olesen
- * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @version   GIT: <git_id>
- * @link      http://github.com/lsolesen/PostNord
+ * @license   For licensing, see LICENSE.md distributed with this source code.
+ * @link      http://github.com/lsolesen/postnord-php-sdk
  */
 
 namespace PostNord\Client;
 
-use PostNord\Exception\PostNord_Exception;
+use PostNord\Exception\PostNordException;
 
 /**
  * PostNord: client.
@@ -24,10 +23,8 @@ use PostNord\Exception\PostNord_Exception;
  * @package   PostNord
  * @author    Lars Olesen <lars@intraface.dk>
  * @copyright 2014 Lars Olesen
- * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @link      http://github.com/lsolesen/PostNord
  */
-class PostNord_Client
+class Client
 {
     /**
      * Request object.
@@ -107,7 +104,7 @@ class PostNord_Client
     {
         $result = $this->request->call('GET', '', $zip_code);
         if (!empty($result->info['http_code']) && $result->info['http_code'] != 200) {
-            throw new PostNord_Exception(
+            throw new PostNordException(
                 'Error with http_code: ' . $result->info['http_code']
             );
         }

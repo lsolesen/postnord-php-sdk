@@ -8,9 +8,8 @@
  * @package   PostNord
  * @author    Lars Olesen <lars@intraface.dk>
  * @copyright 2014 Lars Olesen
- * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @version   GIT: <git_id>
- * @link      http://github.com/lsolesen/PostNord
+ * @license   For licensing, see LICENSE.md distributed with this source code.
+ * @link      http://github.com/lsolesen/postnord-php-sdk
  */
 
 namespace PostNord\Exception;
@@ -22,10 +21,8 @@ namespace PostNord\Exception;
  * @package   PostNord
  * @author    Lars Olesen <lars@intraface.dk>
  * @copyright 2014 Lars Olesen
- * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @link      http://github.com/lsolesen/PostNord
  */
-class PostNord_Exception extends \Exception
+class PostNordException extends \Exception
 {
     /**
      * Service help URL in reference to error.

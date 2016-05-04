@@ -8,12 +8,13 @@
  * @package   PostNord
  * @author    Lars Olesen <lars@intraface.dk>
  * @copyright 2014 Lars Olesen
- * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @version   GIT: <git_id>
- * @link      http://github.com/lsolesen/PostNord
+ * @license   For licensing, see LICENSE.md distributed with this source code.
+ * @link      http://github.com/lsolesen/postnord-php-sdk
  */
 
 namespace PostNord\Client;
+
+use PostNord\Client\Response;
 
 /**
  * PostNord: request.
@@ -22,10 +23,8 @@ namespace PostNord\Client;
  * @package   PostNord
  * @author    Lars Olesen <lars@intraface.dk>
  * @copyright 2014 Lars Olesen
- * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @link      http://github.com/lsolesen/PostNord
  */
-class PostNord_Request
+class Request
 {
 
     protected $apiKey;
@@ -69,6 +68,6 @@ class PostNord_Request
         $res = curl_exec($curl);
         $info = curl_getinfo($curl);
         curl_close($curl);
-        return new PostNord_Response($info, $res);
+        return new Response($info, $res);
     }
 }

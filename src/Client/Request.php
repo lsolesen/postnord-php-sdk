@@ -54,9 +54,9 @@ class Request
      */
     public function call($method, $url, $postcode)
     {
-        $url = "http://api.postnord.com/wsp/rest/BusinessLocationLocator" .
-            "/Logistics/ServicePointService_1.0/findNearestByAddress.json?" .
-            "consumerId=" . $this->apiKey .
+        $url = "https://api2.postnord.com/rest/businesslocation" .
+            "/v1/servicepoint/findNearestByAddress.json?" .
+            "apikey=" . $this->apiKey .
             "&countryCode=" . $this->countryCode .
             "&postalCode=" . $postcode .
             '&numberOfServicePoints='.$this->numberOfServicePoints;

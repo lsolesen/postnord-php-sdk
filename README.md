@@ -5,8 +5,8 @@ PHP-SDK for [PostNord webservices](http://www.postdanmark.dk/da/erhverv/faa-raad
 
 ```php5
 <?php
-use PostNord\Client\Request;
-use PostNord\Client\Client;
+use PostNord\Request;
+use PostNord\Client;
 
 $request = new Request($apiKey);
 $client = new Client($request);

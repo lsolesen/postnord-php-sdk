@@ -12,9 +12,9 @@
  * @link      http://github.com/lsolesen/postnord-php-sdk
  */
 
-namespace PostNord\Client;
+namespace PostNord;
 
-use PostNord\Client\Response;
+use PostNord\Response;
 
 /**
  * PostNord: request.

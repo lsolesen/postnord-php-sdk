@@ -2,8 +2,8 @@
 
 namespace PostNord\Tests;
 
-use PostNord\Client\Client as PostNord_Client;
-use PostNord\Client\Request as PostNord_Request;
+use PostNord\Client as PostNord_Client;
+use PostNord\Request as PostNord_Request;
 
 /**
  * Class ClientTest

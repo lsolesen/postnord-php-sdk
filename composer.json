@@ -1,5 +1,5 @@
 {
-  "name": "lsolesen/postnord-php/sdk",
+  "name": "lsolesen/postnord-php-sdk",
     "type": "library",
     "description": "PHP-SDK to communicate with Post Nord",
     "homepage": "http://github.com/lsolesen/postnord-php-sdk",
@@ -24,8 +24,8 @@
         "php": ">=5.2.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "4.4.*",
-        "squizlabs/php_codesniffer": "2.*",
-        "satooshi/php-coveralls": "dev-master"
+        "phpunit/phpunit": "4.8.*",
+        "squizlabs/php_codesniffer": "2.8.*",
+        "satooshi/php-coveralls": "1.0.*"
     }
 }

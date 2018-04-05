@@ -12,7 +12,7 @@
  * @link      http://github.com/lsolesen/postnord-php-sdk
  */
 
-namespace PostNord\Exception;
+namespace PostNord;
 
 /**
  * Class PostNord_Exception

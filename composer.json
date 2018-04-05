@@ -4,6 +4,7 @@
     "description": "PHP-SDK to communicate with Post Nord",
     "homepage": "http://github.com/lsolesen/postnord-php-sdk",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Lars Olesen",
